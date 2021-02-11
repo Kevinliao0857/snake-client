@@ -18,18 +18,26 @@ const connect = function() {
   console.log("Successfully connected to game server")
   });
 
-//  setTimeout(() => {
-//    conn.on("connect", () => {
-//     conn.write("Move: up")
-//     });
-//  }, 50)
 
+  // conn.on("Move", () => {
+  // conn.write("Move: up")
+  // });
 
+  // conn.on("Move", () => {
+  // conn.write("Move: down")
+  // });
 
+  // conn.on("Move", () => {
+  // conn.write("Move: left")
+  // });
 
-  conn.on("connect", (data) => {
-  console.log("Server says: ", data);  
-  });
+  // conn.on("Move", () => {
+  // conn.write("Move: right")
+  // });
+
+  // conn.on("connect", (data) => {
+  // console.log("Server says: ", data);  
+  // });
   
  
 
