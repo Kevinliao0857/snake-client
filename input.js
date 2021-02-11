@@ -5,8 +5,16 @@ Move_Keys = {
   s: "down",
   d: "right"
 
-}
+},
 
+Talk_Keys = {
+
+  y: "YOOOoooLooooo",
+  u: "Eat My Dust",
+  t: "LuLuLuLuLul",
+  i: "Howdy"
+
+}
 
 
 let connection;
@@ -26,7 +34,10 @@ const handleUserInput = (key) => {
   if(key === '\u0003') {
     process.exit();
   } else if (Move_Keys[key]) {
-    connection.write(`Move: ${Move_Keys[key]}`)};
+    connection.write(`Move: ${Move_Keys[key]}`)
+  } else if (Talk_Keys[key]) {
+    connection.write(`Say: ${Talk_Keys[key]}`)
+  };
 
 };
 

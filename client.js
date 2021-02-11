@@ -18,6 +18,9 @@ const connect = function() {
   console.log("Successfully connected to game server")
   });
 
+  conn.on("connect", () => {
+    conn.write("Say: It's Time To Duel");
+    });
 
   // conn.on("Move", () => {
   // conn.write("Move: up")
